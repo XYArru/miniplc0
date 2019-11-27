@@ -21,7 +21,7 @@ Compilation of the C compiler identification source "CMakeCCompilerId.c" produce
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
 
-The C compiler identification is MSVC, found in "C:/Users/Lenovo/Desktop/miniplc0-compiler/miniplc0/out/build/x64-Debug/CMakeFiles/3.15.19080502-MSVC_2/CompilerIdC/CMakeCCompilerId.exe"
+The C compiler identification is MSVC, found in "C:/Users/Lenovo/Desktop/code/miniplc0-compiler/out/build/x64-Debug/CMakeFiles/3.15.19080502-MSVC_2/CompilerIdC/CMakeCCompilerId.exe"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: D:/vs2019c/VC/Tools/MSVC/14.23.28105/bin/HostX64/x64/cl.exe 
@@ -45,37 +45,95 @@ Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" p
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
 
-The CXX compiler identification is MSVC, found in "C:/Users/Lenovo/Desktop/miniplc0-compiler/miniplc0/out/build/x64-Debug/CMakeFiles/3.15.19080502-MSVC_2/CompilerIdCXX/CMakeCXXCompilerId.exe"
+The CXX compiler identification is MSVC, found in "C:/Users/Lenovo/Desktop/code/miniplc0-compiler/out/build/x64-Debug/CMakeFiles/3.15.19080502-MSVC_2/CompilerIdCXX/CMakeCXXCompilerId.exe"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: C:/Users/Lenovo/Desktop/miniplc0-compiler/miniplc0/out/build/x64-Debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/Lenovo/Desktop/code/miniplc0-compiler/out/build/x64-Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):D:\VS2019C\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\CMAKE\Ninja\ninja.exe cmTC_f4aeb && [1/2] Building C object CMakeFiles\cmTC_f4aeb.dir\testCCompiler.c.obj
-[2/2] Linking C executable cmTC_f4aeb.exe
+Run Build Command(s):D:\VS2019C\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\CMAKE\Ninja\ninja.exe cmTC_499b8 && [1/2] Building C object CMakeFiles\cmTC_499b8.dir\testCCompiler.c.obj
+[2/2] Linking C executable cmTC_499b8.exe
 
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: C:/Users/Lenovo/Desktop/miniplc0-compiler/miniplc0/out/build/x64-Debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/Lenovo/Desktop/code/miniplc0-compiler/out/build/x64-Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):D:\VS2019C\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\CMAKE\Ninja\ninja.exe cmTC_def29 && [1/2] Building C object CMakeFiles\cmTC_def29.dir\CMakeCCompilerABI.c.obj
-[2/2] Linking C executable cmTC_def29.exe
+Run Build Command(s):D:\VS2019C\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\CMAKE\Ninja\ninja.exe cmTC_8f654 && [1/2] Building C object CMakeFiles\cmTC_8f654.dir\CMakeCCompilerABI.c.obj
+[2/2] Linking C executable cmTC_8f654.exe
 
 
 
 Determining if the CXX compiler works passed with the following output:
-Change Dir: C:/Users/Lenovo/Desktop/miniplc0-compiler/miniplc0/out/build/x64-Debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/Lenovo/Desktop/code/miniplc0-compiler/out/build/x64-Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):D:\VS2019C\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\CMAKE\Ninja\ninja.exe cmTC_b3435 && [1/2] Building CXX object CMakeFiles\cmTC_b3435.dir\testCXXCompiler.cxx.obj
-[2/2] Linking CXX executable cmTC_b3435.exe
+Run Build Command(s):D:\VS2019C\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\CMAKE\Ninja\ninja.exe cmTC_854f1 && [1/2] Building CXX object CMakeFiles\cmTC_854f1.dir\testCXXCompiler.cxx.obj
+[2/2] Linking CXX executable cmTC_854f1.exe
 
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: C:/Users/Lenovo/Desktop/miniplc0-compiler/miniplc0/out/build/x64-Debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/Lenovo/Desktop/code/miniplc0-compiler/out/build/x64-Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):D:\VS2019C\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\CMAKE\Ninja\ninja.exe cmTC_78430 && [1/2] Building CXX object CMakeFiles\cmTC_78430.dir\CMakeCXXCompilerABI.cpp.obj
-[2/2] Linking CXX executable cmTC_78430.exe
+Run Build Command(s):D:\VS2019C\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\CMAKE\Ninja\ninja.exe cmTC_c06b9 && [1/2] Building CXX object CMakeFiles\cmTC_c06b9.dir\CMakeCXXCompilerABI.cpp.obj
+[2/2] Linking CXX executable cmTC_c06b9.exe
 
 
+
+Performing C++ SOURCE FILE Test SUPPORTS_VARIADIC_TEMPLATES succeeded with the following output:
+Change Dir: C:/Users/Lenovo/Desktop/code/miniplc0-compiler/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:\VS2019C\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\CMAKE\Ninja\ninja.exe cmTC_0a4e7 && [1/2] Building CXX object CMakeFiles\cmTC_0a4e7.dir\src.cxx.obj
+[2/2] Linking CXX executable cmTC_0a4e7.exe
+
+
+Source file was:
+
+  template <class T, class ...Types>
+  struct S { typedef typename S<Types...>::type type; };
+  int main() {}
+Performing C++ SOURCE FILE Test SUPPORTS_USER_DEFINED_LITERALS succeeded with the following output:
+Change Dir: C:/Users/Lenovo/Desktop/code/miniplc0-compiler/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:\VS2019C\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\CMAKE\Ninja\ninja.exe cmTC_b9814 && [1/2] Building CXX object CMakeFiles\cmTC_b9814.dir\src.cxx.obj
+[2/2] Linking CXX executable cmTC_b9814.exe
+
+
+Source file was:
+
+  void operator"" _udl(long double);
+  int main() {}
+Performing C++ SOURCE FILE Test FMT_HAS_VARIANT succeeded with the following output:
+Change Dir: C:/Users/Lenovo/Desktop/code/miniplc0-compiler/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:\VS2019C\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\CMAKE\Ninja\ninja.exe cmTC_00e23 && [1/2] Building CXX object CMakeFiles\cmTC_00e23.dir\src.cxx.obj
+cl: 命令行 warning D9002 :忽略未知选项“-std=c++1z”
+class template variant is only available with C++17 or later.
+[2/2] Linking CXX executable cmTC_00e23.exe
+
+
+Source file was:
+
+  #include <variant>
+  int main() {}
+Determining if the _strtod_l exist passed with the following output:
+Change Dir: C:/Users/Lenovo/Desktop/code/miniplc0-compiler/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:\VS2019C\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\CMAKE\Ninja\ninja.exe cmTC_cc2ea && [1/2] Building C object CMakeFiles\cmTC_cc2ea.dir\CheckSymbolExists.c.obj
+[2/2] Linking C executable cmTC_cc2ea.exe
+
+
+File C:/Users/Lenovo/Desktop/code/miniplc0-compiler/out/build/x64-Debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _strtod_l
+  return ((int*)(&_strtod_l))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
 
