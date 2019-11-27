@@ -174,10 +174,13 @@ namespace miniplc0 {
 			case TokenType::IDENTIFIER: {
 				next = nextToken();
 				
-				//是否已经定义
+				//是否已经定义or const
 				if (!isDeclared(next.value().GetValueString())) {
 					return std::make_optional<CompilationError>(_current_pos, ErrorCode::ErrNotDeclared);
 				}
+				if(isConstant(next.value().GetValueString()))
+					return std::make_optional<CompilationError>(_current_pos, ErrorCode::ErrAssignToConstant);
+
 				auto stoidx = getIndex(next.value().GetValueString());
 				// '='
 				next = nextToken();
@@ -219,7 +222,7 @@ namespace miniplc0 {
 				_instructions.emplace_back(Operation::WRT, 0);
 				break; 
 			}
-                case TokenType ::SEMICOLON:
+            case TokenType ::SEMICOLON:
 					next = nextToken();
                     break;
 			    default:
@@ -392,6 +395,8 @@ namespace miniplc0 {
 		case TokenType::IDENTIFIER:
 			if (!isDeclared(next.value().GetValueString()))
 				return std::make_optional<CompilationError>(_current_pos, ErrorCode::ErrInvalidIdentifier);
+			else if (isUninitializedVariable(next.value().GetValueString()))
+				return std::make_optional<CompilationError>(_current_pos, ErrorCode::ErrNotInitialized);
 			else {
 				auto idx = getIndex(next.value().GetValueString());
 				_instructions.emplace_back(Operation::LOD, idx);
